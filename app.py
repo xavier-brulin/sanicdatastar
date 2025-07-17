@@ -17,7 +17,7 @@ app.static("/static", "./static/", name="static")
 async def init(request):
     # Initialize the DataStar SSE generator
     sse = SSE()
-    html = "<main id='main' class='playfair-display-500'><h1>DataStar SSE Example</h1></main>"
+    html = "<main id='main' class='playfair-display-500'><h1>DataStar SSE Examples</h1></main>"
     return  sse.patch_elements(html)
 
 
